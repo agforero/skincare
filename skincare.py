@@ -1,75 +1,69 @@
 def main():
     # True if good, False if bad
-    oily = {
-        "Salicylic Acid": True,
-        "Benzoyl Peroxide": True,
-        "Niacinamide": True,
-        "Glycolic Acid": True,
-        "Hyaluronic Acid": True,
-        "Dimethicone": True,
-        "Sodium Hyaluronate": True,
-        "Retinol": True,
-        "L-ascorbic acid (Vitamin C)": True,
-        "Clay": True,
+    # all strings are lower case and anything read in will be converted to lower case as well
 
-        "SD Alcohol": False,
-        "Denatured Alcohol": False,
-        "Tocopheryl Acetate": False,
-        "Witch Hazel": False,
-        "Sodium C14-16 Olefin Sulfate": False,
-        "Sodium Lauryl Sulfate": False,
-        "Fragrance": False,
+    oily = {
+        "salicylic acid": True,
+        "benzoyl peroxide": True,
+        "niacinamide": True,
+        "glycolic acid": True,
+        "hyaluronic acid": True,
+        "dimethicone": True,
+        "sodium hyaluronate": True,
+        "retinol": True,
+        "l-ascorbic acid": True,
+        "vitamin c": True,
+        "clay": True,
+
+        "sd alcohol": False,
+        "denatured alcohol": False,
+        "tocopheryl acetate": False,
+        "witch hazel": False,
+        "sodium c14-16 olefin sulfate": False,
+        "sodium lauryl sulfate": False,
+        "fragrance": False
     }
 
-"""
-- Polysorbate 85 
-- Butylene Glycol 
-- Cocamidopropyl Betaine 
-- Urea 
-- Cetearyl Alcohol 
-- Shea Butter 
-- Sodium Hyaluronate 
-- Stearic Acid 
-- Propylene Glycol 
-- Glycerin 
+    dry = {
+        "polysorbate 85": True,
+        "butylene glycol": True,
+        "cocamidopropyl betaine": True,
+        "urea": True,
+        "cetearyl alcohol": True,
+        "shea butter": True,
+        "sodium hyaluronate": True,
+        "stearic acid": True,
+        "propylene glycol": True,
+        "glycerin": True,
 
-- SD Alcohol 
-- Denatured Alcohol 
-- Isopropyl Alcohol 
-- Witch Hazel 
-- Sodium Laureth Sulfate 
-- Menthol 
-- Sodium Lauryl Sulfate 
-- Fragrance 
+        "sd alcohol": False,
+        "denatured alcohol": False,
+        "isopropyl alcohol": False,
+        "witch hazel": False,
+        "sodium laureth sulfate": False,
+        "menthol": False,
+        "sodium lauryl sulfate": False,
+        "fragrance": False
+    }
 
+    normal = {
+        "glycolic acid": True,
+        "panthenol": True,
+        "sodium hyaluronate": True,
+        "retinol": True,
+        "dimethicone": True,
+        "hyaluronic acid": True,
 
+        "sd alcohol": False,
+        "denatured alcohol": False,
+        "isopropyl alcohol": False,
+        "witch hazel": False,
+        "sodium laureth sulfate": False,
+        "menthol": False,
+        "sodium lauryl sulfate": False,
+        "fragrance": False,
+        "sodium chloride": False
+    }
 
-- Glycolic Acid 
-- Panthenol 
-- Sodium Hyaluronate 
-- Retinol 
-- Dimethicone 
-- Hyaluronic Acid 
-
-- SD Alcohol 
-- Denatured Alcohol 
-- Isopropyl Alcohol 
-- Witch Hazel 
-- Sodium Laureth Sulfate 
-- Menthol 
-- Sodium Lauryl Sulfate 
-- Fragrance 
-- Sodium Chloride 
-
-
-
-- Zinc Oxide 
-- Titanium Dioxide 
-- Butylyparaben 
-- 4MBC 
-
-- Oxybenzone 
-- Octocrylene 
-- Butylyparaben 
-- 4MBC 
-"""
+if __name__ == "__main__":
+    main()
